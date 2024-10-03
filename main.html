@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <title>Climattica</title>
-         <style>
+        <title>Climattica</title>
+        <style>
 
             body { 
                 background-color: black;
@@ -18,45 +18,47 @@
                 left: 0;
                 bottom: 0;
                 right: 0;
-                position: absolute;
+                position: fixed;
                 z-index: -1;   
             }
 
-            .text {
-                
-                font-size: 100px;
+            .website-title {
                 color: white;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 100px;
+                display: inline-flex;
+            }
+
+            .website-subtitle {
+                font-size: 40px;
+                color: white;
+                text-align: center;
+                margin-inline: 40px;
             }
 
             .globe {
-                position: relative;
-                top: 18px;
-                left: 10px;
-            }
-            div {
-                position: relative;
+                vertical-align: middle;
+                width: 70px;
+                height: 70px;
             }
 
-         </style>
+        </style>
     </head>
     
     <body>
-        <div style= "display: inline-block; right: 100px;">
-            
-
-            <h1 style="padding: 20px 120px; background: rgba(0, 0, 0, 0.3); border-radius: 100px;" class="text">
-                <img class="globe" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif" width="100px" height="100px">
-                <span>Climattica</span>
+        <div class="website-title">
+            <h1 style="font-size: 50px; width: 400px; text-align: center;">
+                <img class="globe" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif">
+                <span style="vertical-align: middle;">Climattica</span>
             </h1>
         </div>
-            
-        <div style="color: white; font-size: 25px; bottom: 150px; padding: 100px; margin-inline: 100px;">
-            <h1 style= "text-align: center;"> Welcome to our website, your trusted website source for comprehensive information of climates around the world.
-            </h1>
+        
+        <div>
+            <h1 class="website-subtitle"> Welcome to our website, your trusted website source for comprehensive information of climates around the world.</h1>
         </div>
-        <div style="color: white; font-size: 50px; position: relative; top: 10px; padding: 0px;">
-            <h1 style= "text-align: center"> Types of Climates</h1>
 
+        <div style="margin-top: 60px;">
+            <h1 style="color: white; font-size: 50px; text-align: center"> Types of Climates</h1>
         </div>
     </body>
 </html>
