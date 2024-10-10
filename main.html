@@ -3,7 +3,6 @@
     <head>
         <title>Climattica</title>
         <style>
-
             body { 
                 background-color: black;
             }
@@ -27,6 +26,11 @@
                 background: rgba(0, 0, 0, 0.3);
                 border-radius: 100px;
                 display: inline-flex;
+                padding-inline: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 50px;
+
             }
 
             .website-subtitle {
@@ -37,20 +41,24 @@
             }
 
             .globe {
-                vertical-align: middle;
                 width: 70px;
                 height: 70px;
             }
 
+            .circular-image {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-inline: 20px;
+            }
         </style>
     </head>
     
     <body>
         <div class="website-title">
-            <h1 style="font-size: 50px; width: 400px; text-align: center;">
-                <img class="globe" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif">
-                <span style="vertical-align: middle;">Climattica</span>
-            </h1>
+            <img class="globe" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif">
+            <span style="padding-top: 5px;"><strong>Climattica</strong></span>
         </div>
         
         <div>
@@ -59,6 +67,14 @@
 
         <div style="margin-top: 60px;">
             <h1 style="color: white; font-size: 50px; text-align: center"> Types of Climates</h1>
+        </div>
+
+        <div style="text-align: center;">
+            <img class="circular-image" src="https://i.pinimg.com/originals/18/89/46/188946744d97aac5241c4a9bef0c38d7.gif" alt="Tropical image">
+            <img class="circular-image" src="https://i.pinimg.com/originals/18/89/46/188946744d97aac5241c4a9bef0c38d7.gif" alt="Tropical image">
+            <img class="circular-image" src="https://i.pinimg.com/originals/18/89/46/188946744d97aac5241c4a9bef0c38d7.gif" alt="Tropical image">
+            <img class="circular-image" src="https://i.pinimg.com/originals/18/89/46/188946744d97aac5241c4a9bef0c38d7.gif" alt="Tropical image">
+            <img class="circular-image" src="https://i.pinimg.com/originals/18/89/46/188946744d97aac5241c4a9bef0c38d7.gif" alt="Tropical image">
         </div>
     </body>
 </html>
