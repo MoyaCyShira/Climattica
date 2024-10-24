@@ -1,3 +1,6 @@
+
+
+
 *{ 
     margin: 0;
     padding: 0;
@@ -9,7 +12,26 @@
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    position: relative;
+    padding: 20px;
+    color: white; /* Text color */
+    /*text-align: center;*/
+
  }
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* 50% opacity */    
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place content above overlay */
+
+}
  .slides{
     width: 100%;
     height: 100vh;
@@ -17,9 +39,8 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
     scroll-snap-align: start;
-    
  }
 .slides img{
     width: 350px;
@@ -29,14 +50,126 @@
     font-weight: 600;
     max-width: 650px;
 }
-.slide1{
+
+.slide1 {
+    position: relative;
+    height: 110%;
     background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;   
+    background-position: center;
 }
-.slide2{
+
+            .website-title {
+                color: white;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 100px;
+                display: block;
+                padding-inline: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 50px;
+
+            }
+
+            .circular-image-container {
+                width: 250px; /* Set the width */
+                height: 250px; /* Set the height */
+                overflow: hidden; /* Hide overflow */
+                border-radius: 50%; /* Circular container */
+                display: inline-block; /* Inline block for spacing */
+                margin-inline: 30px; /* Space between images */
+            }
+            .circular-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                /*
+                border-radius: 50%;
+                margin-inline: 10px;
+                overflow: hidden; 
+                */
+            }
+    
+.slide2 {
+    position: relative;
+    height: 110%;
+    background: url(https://i.pinimg.com/originals/54/58/30/5458303d91ff080f07a7884b9f6ff2a7.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /*background: linear-gradient(454deg, #9574ff, #ff5353);*/
+}
+.slide3 {
     background: linear-gradient(454deg, #404c80, #53ff88);
-}.slide3{
-    background: linear-gradient(454deg, #9574ff, #ff5353);
+}
+
+.slide4{
+    position: relative;
+    height: 110%;
+    background: url(https://cdn.cara.app/production/posts/ac6a9628-a147-4d18-b509-288e152d9b29/628B3466-DE45-4253-A04D-5052453B7BC5.jpg-y7B8I8OcSyCqIOxkb5Pn9-628B3466-DE45-4253-A04D-5052453B7BC5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide5 {
+    background: linear-gradient(454deg, #404c80, #53ff88);
+}
+.slide6 {
+    position: relative;
+    height: 110%;
+    background: url(https://animesher.com/orig/1/145/1453/14532/animesher.com_sky-gif-scenery-1453223.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide7 {
+    background: linear-gradient(454deg, #404c80, #53ff88);
+}
+.slide8 {
+    position: relative;
+    height: 110%;
+    background: url(https://www.icegif.com/wp-content/uploads/2023/02/icegif-1341.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide9 {
+    background: linear-gradient(454deg, #404c80, #53ff88);
+}
+.slide10 {
+    position: relative;
+    height: 110%;
+    background: url(https://i.gifer.com/HbbB.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide11 {
+    background: linear-gradient(454deg, #404c80, #53ff88);
+}
+.slide12 {
+    position: relative;
+    height: 110%;
+    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide13 {
+    position: relative;
+    height: 110%;
+    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide14 {
+    position: relative;
+    height: 110%;
+    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
