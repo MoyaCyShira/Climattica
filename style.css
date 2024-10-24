@@ -147,7 +147,12 @@
     background-position: center;
 }
 .slide11 {
-    background: linear-gradient(454deg, #404c80, #53ff88);
+    position: relative;
+    height: 110%;
+    background: url(https://i.gifer.com/HbbB.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .slide12 {
     position: relative;
