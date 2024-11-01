@@ -16,7 +16,6 @@
     padding: 20px;
     color: white; /* Text color */
     /*text-align: center;*/
-
  }
  .overlay {
     position: absolute;
@@ -50,7 +49,6 @@
     font-weight: 600;
     max-width: 650px;
 }
-
 .slide1 {
     position: relative;
     height: 110%;
@@ -65,8 +63,8 @@
                 background: rgba(0, 0, 0, 0.3);
                 border-radius: 100px;
                 display: block;
-                padding-inline: 50px;
-                padding-top: 10px;
+                padding-inline: 10px;
+                padding-top: 150px;
                 padding-bottom: 10px;
                 font-size: 50px;
 
@@ -149,7 +147,7 @@
 .slide11 {
     position: relative;
     height: 110%;
-    background: url(https://i.gifer.com/HbbB.gif);
+    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -163,14 +161,6 @@
     background-position: center;
 }
 .slide13 {
-    position: relative;
-    height: 110%;
-    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.slide14 {
     position: relative;
     height: 110%;
     background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
