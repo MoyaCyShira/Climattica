@@ -1,13 +1,11 @@
-
-
-
 *{ 
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
- .container{
+
+.container{
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
@@ -16,8 +14,9 @@
     padding: 20px;
     color: white; /* Text color */
     /*text-align: center;*/
- }
- .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,9 +28,9 @@
 .content {
     position: relative;
     z-index: 1; /* Place content above overlay */
-
 }
- .slides{
+
+.slides {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -40,55 +39,79 @@
     gap: 50px;
     color: rgb(255, 255, 255);
     scroll-snap-align: start;
- }
-.slides img{
-    width: 350px;
-}
-.slides h2{
-    font-size: 70px;
-    font-weight: 600;
-    max-width: 650px;
-}
-.slide1 {
+
     position: relative;
     height: 110%;
-    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
+    /*
+    background: url(https://i.pinimg.com/originals/54/58/30/5458303d91ff080f07a7884b9f6ff2a7.gif);
+    */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-            .website-title {
-                color: white;
-                background: rgba(0, 0, 0, 0.3);
-                border-radius: 100px;
-                display: block;
-                padding-inline: 10px;
-                padding-top: 150px;
-                padding-bottom: 10px;
-                font-size: 50px;
+.slides img{
+    width: 350px;
+}
 
-            }
+.slides h2{
+    font-size: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
 
-            .circular-image-container {
-                width: 250px; /* Set the width */
-                height: 250px; /* Set the height */
-                overflow: hidden; /* Hide overflow */
-                border-radius: 50%; /* Circular container */
-                display: inline-block; /* Inline block for spacing */
-                margin-inline: 30px; /* Space between images */
-            }
-            .circular-image {
-                width: 100%;
-                height: 100%;
-                object-fit: cover; 
-                /*
-                border-radius: 50%;
-                margin-inline: 10px;
-                overflow: hidden; 
-                */
-            }
-    
+.website-title {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+    display: inline-flex;
+    padding-inline: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin: 100px;
+    align-items: center;
+}
+
+.title-icon {
+    width: 70px !important; /* Set the width of the image */
+    height: 70px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+    align-items: center;
+}
+
+.circular-image-container {
+    width: 250px; /* Set the width */
+    height: 250px; /* Set the height */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 50%; /* Circular container */
+    display: inline-block; /* Inline block for spacing */
+    margin-inline: 30px; /* Space between images */
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    /*
+    border-radius: 50%;
+    margin-inline: 10px;
+    overflow: hidden; 
+    */
+}
+
+.slide1 {
+    position: relative;
+    height: 110%;
+    /*
+    background: url(https://i.pinimg.com/originals/a2/6c/af/a26caf8007678c9c489207faf8230ac6.gif);
+    */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(454deg, #9574ff, #ff5353);*/
+}
+
 .slide2 {
     position: relative;
     height: 110%;
@@ -97,8 +120,8 @@
     background-size: cover;
     background-position: center;
 
-    /*background: linear-gradient(454deg, #9574ff, #ff5353);*/
 }
+
 .slide3 {
     background: linear-gradient(454deg, #404c80, #53ff88);
 }
