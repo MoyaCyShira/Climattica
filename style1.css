@@ -1,5 +1,6 @@
 * { 
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body, html {
@@ -8,11 +9,53 @@ body, html {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 p {
     font-size: 2rem;
 }
+
+/*Navbar*/
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+}
+  
+li.navitem {
+    float: left;
+}
+
+li {
+    text-align: left;
+}
+
+li.right{
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.15s;
+    text-shadow: 0px 1px #000000;
+}
+  
+li a:hover {
+    color: #53ff88;
+}
+
 
 .container {
     width: 100%;
@@ -22,6 +65,7 @@ p {
     position: relative;
     padding: 0; /* Removed padding to avoid extra spaces */
     color: white; /* Text color */
+    scroll-behavior: smooth;
 }
 
 .website-title {
@@ -155,7 +199,7 @@ p {
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    top: 75%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the button on the screen */
     font-size: 1.5rem; /* Bigger font size */
