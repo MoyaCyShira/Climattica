@@ -1,0 +1,182 @@
+* { 
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    padding: 0; /* Removed padding to avoid extra spaces */
+    color: white; /* Text color */
+}
+
+.website-title {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+    display: inline-flex;
+    padding: 10px;
+    font-size: 50px;
+    margin: 1rem;
+    align-items: center;
+    margin-left: 0; /* Align to the left */
+    margin-right: auto; /* Prevents centering */
+}
+
+
+.title-icon {
+    width: 70px !important; /* Set the width of the image */
+    height: 70px !important; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.slide { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex; /* Changed to flex for better alignment */
+    flex-direction: column; /* Ensure flex items are in a column layout */
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-snap-align: start;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.content {
+    position: relative;
+    top: 0; /* Reset top alignment */
+    transform: none; /* Remove transformation */
+    z-index: 1; /* Place content above overlay */
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 50px 0px;
+}
+
+.circular-image-container {
+    width: 200px; /* Set the width */
+    height: 200px; /* Set the height */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 50%; /* Circular container */
+    display: inline-block; /* Inline block for spacing */
+    margin-inline: 30px; /* Space between images */
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+}
+
+.slide1, .slide2, .slide4, .slide6, .slide8, .slide10, .slide11, .slide12, .slide13 {
+    height: 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide3, .slide5, .slide7, .slide9 {
+    background: linear-gradient(454deg, #404c80, #53ff88);
+}
+
+.climate-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid-container.grid-2-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.grid-container.grid-2-column > div {
+    background-color: transparent; /* Removes the background color */
+    border: none; /* Removes any border */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    flex-direction: column; /* Arrange content in column */
+    overflow: hidden; /* Prevent internal overflow */
+}
+
+
+.climate-button {
+    padding: 1rem 2rem; /* Increased padding for a bigger button */
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 2px solid white; /* Slightly thicker border */
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button on the screen */
+    font-size: 1.5rem; /* Bigger font size */
+    text-align: center;
+}
+
+
+.grid-container.grid-4-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0; /* Remove gap between grid items */
+    width: 100%;
+    height: 100%;
+    padding: 0; /* Remove padding */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.grid-container.grid-4-column > div {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 0; /* Remove padding */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; /* Ensure div spans the full width of the container */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* Prevent internal overflow */
+}
+

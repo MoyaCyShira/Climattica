@@ -1,11 +1,8 @@
-*{ 
-    margin: 0;
-    padding: 0;
+* { 
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
@@ -16,24 +13,49 @@
     /*text-align: center;*/
 }
 
-.overlay {
+/*.overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* 50% opacity */    
-}
+    background-color: rgba(0, 0, 0, 0.6); /* 50% opacity    
+}*/
 
 .content {
     position: relative;
+    top: 30%;
+    transform: translateY(-50%);
     z-index: 1; /* Place content above overlay */
 }
+.slide { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://placekitten.com/1200/800');
+    background-size: cover;
 
-.slides {
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-snap-align: start;
+}
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+/*.slide {
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -44,11 +66,11 @@
     height: 110%;
     /*
     background: url(https://i.pinimg.com/originals/54/58/30/5458303d91ff080f07a7884b9f6ff2a7.gif);
-    */
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+}*/
 
 .slides img{
     width: 350px;
@@ -69,8 +91,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 50px;
-    margin: 100px;
-    align-items: center;
 }
 
 .title-icon {
@@ -79,10 +99,37 @@
     margin-right: 10px; /* Space between image and text */
     align-items: center;
 }
+/* CSS */
+.welcome-message {
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    /*margin: 0 auto;  Center align */
+    /*margin-top: -70px;  Adjust the top margin */
+    position: relative;
+    top: 10px; /* Move up 30px, adjust as needed */
+}
+
+.climate-types {
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    margin: 0 auto; /* Center align */
+    /*margin-top: -100px;  Adjust the top margin */
+    position: relative;
+    /*top: 120px;  Move up 30px, adjust as needed */
+}
+
+/* Ensure this for .title-icon */
+.title-icon {
+    width: 50px !important; /* Set the width of the image */
+    height: auto !important; /* Maintain aspect ratio */
+    margin-right: 10px !important; /* Space between image and text */
+}
 
 .circular-image-container {
-    width: 250px; /* Set the width */
-    height: 250px; /* Set the height */
+    width: 200px; /* Set the width */
+    height: 200px; /* Set the height */
     overflow: hidden; /* Hide overflow */
     border-radius: 50%; /* Circular container */
     display: inline-block; /* Inline block for spacing */
@@ -92,7 +139,6 @@
 .circular-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
     /*
     border-radius: 50%;
     margin-inline: 10px;
