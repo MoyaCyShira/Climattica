@@ -88,6 +88,7 @@ li a:hover {
     margin-right: 10px; /* Space between image and text */
 }
 
+
 .slide { 
     position: relative; 
     height: 100vh;
@@ -109,7 +110,7 @@ li a:hover {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.50);
 }
 
 .content {
